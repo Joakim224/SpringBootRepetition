@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Opgave2</title>
+</head>
+<body>
+<h1>Tilføj data</h1>
+<form action="/save2" method="post" th:object="${task}" >
+    <p><label>Beskrivelse: </label> <input name="description" type="text" required th:field="*{description}"> </p>
+    <p><label>Status: </label> <input name="status" type="text" th:field="*{status}"></p>
+    <button type="submit">Gem</button>
+</form>
+</body>
+</html>

@@ -1,0 +1,8 @@
+body {
+    background: coral;
+}
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 20%;
+}
